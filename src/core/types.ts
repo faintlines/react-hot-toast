@@ -52,6 +52,7 @@ export interface Toast {
   createdAt: number;
   visible: boolean;
   height?: number;
+  onClick?: () => void;
 }
 
 export type ToastOptions = Partial<

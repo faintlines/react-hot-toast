@@ -93,6 +93,7 @@ export const ToastBar: React.FC<ToastBarProps> = React.memo(
           ...style,
           ...toast.style,
         }}
+        onClick={toast.onClick}
       >
         {typeof children === 'function' ? (
           children({
